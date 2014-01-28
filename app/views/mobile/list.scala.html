@@ -1,5 +1,7 @@
 @(cities: Seq[String])
 
 @mobilemain("Choose a city") {
-  ???
+    @for( city <- cities ) {
+        <a href="@routes.MobileApplication.sale( city )">@city</a> <br/>
+    }
 }

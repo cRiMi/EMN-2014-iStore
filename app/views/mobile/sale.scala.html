@@ -30,6 +30,7 @@
 
             var WS = window['MozWebSocket'] ? MozWebSocket : WebSocket
             var socket = new WS("ws://" + location.host + "/sales/@from")
+
             $('#performSale').click(function(e) {
                 e.preventDefault();
                 var slug = generateSale();
